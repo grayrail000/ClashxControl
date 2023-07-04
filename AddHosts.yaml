@@ -1,0 +1,12 @@
+hosts:
+#设置要代理的域名
+  www.nivod4.tv: 127.0.0.1
+  godamanga.com: 127.0.0.1
+  baozimh.org: 127.0.0.1
+  www.stnn.cc: 127.0.0.1
+exclude_files:
+#排除修改的文件    
+- AddHosts.yaml
+- config.yaml
+   # 默认的配置文件,不建议修改
+clash_catalog: '/Users/1a/.config/clash/'

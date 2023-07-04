@@ -11,19 +11,19 @@ def modifyYaml():
         path = os.path.dirname(sys.executable)
     elif __file__:
         path = os.path.dirname(__file__)
+
     directory = path + '/'
     print('工作目录:', directory)
-
-    # directory = '/Users/1a/.config/clash/'
-    yaml_files = glob.glob(directory + '*.yaml')
-
+    #读取配置信息
     with open(directory + 'AddHosts.yaml', 'r') as file:
         add_hosts_data = YAML().load(file)
         add_hosts = add_hosts_data.get('hosts')
         exclude_files = add_hosts_data.get('exclude_files')
+        clash_catalog = add_hosts_data.get('clash_catalog')
 
     print('新增hosts:', add_hosts)
     print('排除的文件:', exclude_files)
+    yaml_files = glob.glob(clash_catalog + '*.yaml')  # 获取所有yaml文件
 
     yaml = YAML()
     for file in yaml_files:
@@ -47,3 +47,4 @@ if __name__ == '__main__':
     modifyYaml()
     # 打包
     # pyinstaller --onefile main.py
+    # pyinstaller -D main.py
