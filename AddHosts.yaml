@@ -1,12 +1,78 @@
 hosts:
-#设置要代理的域名
+  #设置要代理的域名
   www.nivod4.tv: 127.0.0.1
   godamanga.com: 127.0.0.1
   baozimh.org: 127.0.0.1
   www.stnn.cc: 127.0.0.1
+  www.agedm.tv: 127.0.0.1
+  www.v2ex.com: 127.0.0.1
+  www.twitter.com: 127.0.0.1
+  mddm.tv: 127.0.0.1
+  dmla1.com: 127.0.0.1
+  hanpian.tv: 127.0.0.1
+  88dmw.com: 127.0.0.1
+  agemys.org: 127.0.0.1
+  dmand5: 127.0.0.1
+  mxdm9: 127.0.0.1
+  www.88dmw.com: 128.2.0.1
+  www.mxdm9.com: 128.2.0.1
+  www.anfuns.cc: 128.2.0.1
+  eacg.net: 128.2.0.1
+  www.dmla1.com: 128.2.0.1
+  www.kktv.me: 128.2.0.1
+  m.agemys.org: 128.2.0.1
+  www.yydm1.cc: 128.2.0.1
+  www.haitu.tv: 128.2.0.1
+  www.mddm.tv: 128.2.0.1
+  buding3.com: 128.2.0.1
+  www.g916.com: 128.2.0.1
+  tw.tv.yahoo.com: 128.2.0.1
+  ani.gamer.com.tw: 128.2.0.1
+  www.hanpian.tv: 128.2.0.1
+  ac.qq.com: 128.2.0.1
+  play.google.com: 128.2.0.1
+  www.extrabux.com: 128.2.0.1
+  www.dealmoon.ca: 128.2.0.1
+  dm233.cc.atlaq.com: 128.2.0.1
+  akibamarket.com: 128.2.0.1
+  feijisu4.com: 128.2.0.1
+  m.jpbeta.net: 128.2.0.1
+  www.iq.com: 128.2.0.1
+  shouyou.3dmgame.com: 128.2.0.1
+  www.acgfans.me: 128.2.0.1
+  halihali7.com: 128.2.0.1
+  www.857dmz.com: 128.2.0.1
+  www.martinku.cn: 128.2.0.1
+  dongmanzaixiankan.com: 128.2.0.1
+  www.acgvod.com: 128.2.0.1
+  waptv.sogou.com: 128.2.0.1
+  www.7kdm.com: 128.2.0.1
+  www.mandaowang.com: 128.2.0.1
+  virtualsc.org: 128.2.0.1
+  m.pangzitv.com: 128.2.0.1
+  www.pc6.com: 128.2.0.1
+  www.kkdm2.com: 128.2.0.1
+  www.916dm.com: 128.2.0.1
+  www.jkxuexi.com: 128.2.0.1
+  acgfta.com: 128.2.0.1
+  www.histar.tv: 128.2.0.1
+  ziziyy1.com: 128.2.0.1
+  www.dongmanwan.com: 128.2.0.1
+  www.cartoonmad.com: 128.2.0.1
+  www.canva.cn: 128.2.0.1
+  twitter.com: 128.2.0.1
+  www.ncbi.nlm.nih.gov: 128.2.0.1
+  www.acgbox.link: 128.2.0.1
+  www.qdm66.com: 128.2.0.1
+  www.baidu.com: 128.2.0.1
+  weibo.com: 128.2.0.1
+  www.ailabtools.com: 128.2.0.1
+
+
+
 exclude_files:
-#排除修改的文件    
-- AddHosts.yaml
-- config.yaml
-   # 默认的配置文件,不建议修改
+  #排除修改的文件
+  - AddHosts.yaml
+  - config.yaml
+  # 默认的配置文件,不建议修改
 clash_catalog: '/Users/1a/.config/clash/'
