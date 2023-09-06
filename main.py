@@ -14,7 +14,7 @@ def modifyYaml():
 
     directory = path + '/'
     print('工作目录:', directory)
-    #读取配置信息
+    # 读取配置信息
     with open(directory + 'AddHosts.yaml', 'r') as file:
         add_hosts_data = YAML().load(file)
         add_hosts = add_hosts_data.get('hosts')
@@ -28,15 +28,17 @@ def modifyYaml():
     yaml = YAML()
     for file in yaml_files:
         file_name = os.path.basename(file)
+        _add_hosts_temp = add_hosts.copy()
         if file_name not in exclude_files:
             with open(file, 'r') as file_temp:
                 data = yaml.load(file_temp)
 
             hosts = data.get('hosts')
-            if hosts is not None:
-                add_hosts.update(hosts)  # 如果之前存在hosts，就更新
 
-            data['hosts'] = add_hosts  # 设置hosts
+            if hosts is not None:
+                _add_hosts_temp.update(hosts)  # 如果之前存在hosts，就更新
+
+            data['hosts'] = _add_hosts_temp  # 设置hosts
 
             with open(file, 'w', encoding='utf-8') as file_temp:
                 yaml.dump(data, file_temp)

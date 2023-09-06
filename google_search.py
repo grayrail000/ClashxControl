@@ -118,7 +118,6 @@ def Get_google_search(q, _start=0):
 
     except requests.exceptions.RequestException:
         print('HTTP Request failed')
-
     return _data
 
 
